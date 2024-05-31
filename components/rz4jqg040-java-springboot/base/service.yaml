@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: rz4jqg040-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rz4jqg040-java-springboot 
+  name: rz4jqg040-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: rz4jqg040-java-springboot 
